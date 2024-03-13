@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../lib/pako.js"></script>
+    <script type="text/javascript" src="../lib/zpl-image.js"></script>
+    <script type="text/javascript" src="../BrowserPrint-3.1.250.min.js"></script>
+    <script type="text/javascript" src="../BrowserPrint-Zebra-1.1.250.min.js"></script>
+    <script src="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.12/jimp.min.js" integrity="sha512-8xrUum7qKj8xbiUrOzDEJL5uLjpSIMxVevAM5pvBroaxJnxJGFsKaohQPmlzQP8rEoAxrAujWttTnx3AMgGIww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <button onclick="handleFileSelect()">Convert to Image</button>
+        <div id="output"></div>
+    </div>
+</body>
+<style>
+    #app {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+</style>
+
+</html>
